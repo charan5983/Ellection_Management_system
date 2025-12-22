@@ -132,4 +132,4 @@ Frontend integration
 Author
 
 Charan Teja
-MCA | Python Backend & Cloud Enthusiast
+MCA | Python Backend & Cloud Enthusias
