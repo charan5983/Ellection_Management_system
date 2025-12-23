@@ -129,6 +129,62 @@ AI-based fraud detection & analytics
 
 Frontend integration
 
+
+
+1️⃣ Project Status (NEW)
+
+Add a section like:
+
+## Project Status
+- Authentication & Authorization: ✅ Completed
+- Voter Registration: ✅ Completed
+- Admin Approval Flow: ✅ Completed
+- Voting Logic: ⏳ In Progress
+
+2️⃣ Features Implemented (Update)
+
+Add or update:
+
+## Features Implemented
+- User Registration (VOTER / ADMIN)
+- OAuth2-based Login with JWT
+- Role-Based Access Control
+- Voter Profile Creation
+- Admin Voter Approval
+
+3️⃣ How to Run Locally (VERY IMPORTANT)
+
+Add this if not present:
+
+## How to Run Locally
+
+1. Clone the repository
+2. Create virtual environment
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+
+Start the server:
+
+uvicorn app.main:app --reload
+
+
+Open Swagger:
+http://127.0.0.1:8000/docs
+
+
+---
+
+### 4️⃣ Authentication Flow (Brief)
+
+```md
+## Authentication Flow
+1. Register user
+2. Login using OAuth2
+3. JWT token issued
+4. Protected routes require authorization
+
 Author
 
 Charan Teja

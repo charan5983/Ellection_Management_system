@@ -32,3 +32,12 @@ def get_current_user(
     if user is None:
         raise HTTPException(status_code=401, detail="User not found")
     return user
+def require_admin(user = Depends(get_current_user)):
+    if user.role.value != "ADMIN":
+        raise HTTPException(status_code=403, detail="Admin access required")
+    return user
+
+def require_voter(user = Depends(get_current_user)):
+    if user.role.value != "VOTER":
+        raise HTTPException(status_code=403, detail="Voter access required")
+    return user
