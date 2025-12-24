@@ -5,4 +5,7 @@ DATABASE_URL = "mysql+pymysql://root:Charan%40123@localhost/election_management_
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
+
 Base = declarative_base()
+
+Base.metadata.create_all(bind=engine)
